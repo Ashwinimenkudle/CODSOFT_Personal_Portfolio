@@ -1,0 +1,391 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Handlee&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.sidebar{
+    position: absolute;
+    font-family: 'Ubuntu', sans-serif;
+    transition: transform 0.4s ease-in;
+    background-color: rgb(130, 180, 226);
+    height: 100%;
+    width: 290px;
+}
+
+.sidebar nav{
+    padding: 68px;
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 25px;
+    padding: 20px;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+
+.main{
+    background-color: white;
+    margin-left: 80px;
+}
+
+.infocontainer {
+    background-color: white;
+    width: 80%;
+    margin: 150px auto;
+    margin-right: 10px;
+    display: flex;
+    justify-content:space-evenly;
+    word-spacing: 10px;
+}
+
+.candidateinfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pic img {
+    height: 60vh;
+}
+
+.hello {
+     font-size: 40px;
+     font-family: 'Inconsolata', monospace;
+     font-weight: 50;
+}
+
+.name {
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.button {
+    margin-top: 15px;
+}
+
+.button button {
+    padding: 5px 10px;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(73, 18, 97);
+    font-weight: 15px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.button button:hover{
+    color: rgb(73, 18, 97);
+    background-color: white;
+}
+
+.menu-icon {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham {
+    margin-left: 10px;
+    top: 10px;
+}
+
+.cross {
+    margin-left: 245px;
+}
+
+.sidebarGo{
+    transform: translate(-445px,0px);
+    position: absolute;
+}
+
+h1 {
+    color: white;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .infocontainer {
+        flex-wrap: wrap;
+    }
+    .pic img {
+        display: none;
+    }
+    .button button{
+        padding: 4px 4px;
+    }
+
+}
+
+
+/*Styling for About me page*/
+#about {
+    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#about p {
+    font-size: 15px;
+    margin-top: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.thanku {
+    height: 30px;
+    background-color: rgb(54, 57, 79);
+    color:rgb(159, 161, 34);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+.container1 {
+    background-color: rgb(31, 39, 52);
+}
+
+.main-section {
+    width: 100%;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.photo img {
+    margin: 60px 50px;
+    height: 500px;
+    width: 400px;
+    border-radius: 20%;
+    border: 4px solid rgb(94, 42, 95);
+}
+
+.info1 {
+    color: white;
+    margin: 80px 15px;
+    font-size: 1.2rem;
+    font-family: 'Handlee', cursive;
+}
+
+.title{
+    height: 50px;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.info1 p {
+    margin: 20px 0px;
+}
+
+
+
+@media (max-width : 1200px ){
+    .info1{
+        margin-top: 1px;
+    }
+    .photo img{
+        margin-top: 2px;
+        height: 300px;
+        width: 250px;
+    }
+    .photo{
+        height: 300px;
+        margin-bottom: 5px;
+    }
+    .main-section{
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width : 420px){
+    .thanku {
+        font-size: 0.8rem;
+    }
+    .info1 {
+        font-size: 0.8rem;
+    }
+}
+
+/*Styling For Education Detail*/
+
+#Education{
+    background-color: rgb(16, 31, 55);
+}
+
+.title{
+    height: 50px;
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.container2{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    height: 180px;
+    width: 450px;
+    margin: 110px 20px;
+    background-color: white;
+    margin-top: 30px;
+    border-radius: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.card p {
+    padding: 8px;
+    margin-left: 50px;
+}
+
+.card2{
+    margin-top: 120px;
+}
+
+.card3{
+    margin-top: 180px;
+}
+
+@media(max-width : 1200px){
+    .container2 {
+        flex-wrap: wrap;
+    }
+    .card {
+        margin: 10px;
+    }
+    .title {
+        padding-bottom: 20px;
+    }
+}
+
+/* Styling FOr Project Section*/
+
+#Projects {
+    background-color: rgb(16, 31, 55);
+}
+
+.container3 {
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card-p {
+    height: 350px;
+    width: 450px;
+    margin: 100px 20px;
+    background-color: white;
+    margin-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-p p {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card-p a {
+    margin-left: 10px;
+}
+
+.card-p img {
+    background-size: cover;
+    height: 280px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+@media(max-width : 1200px){
+    .container3 {
+        flex-wrap: wrap;
+    }
+    .card-p {
+        margin: 10px;
+    }
+    .title {
+        padding-bottom: 20px;
+    }
+}
+
+/* Styling for Contact Details*/
+#Contact{
+    background-color: rgb(41, 58, 75);
+}
+
+.container4 {
+    margin-top: 10px;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.container4 p {
+    color: rgb(22, 2, 2);
+}
+
+.container4 i {
+    font-size: 23px;
+    margin-top: 5px;
+    padding: 4px;
+    color: rgb(139, 130, 130);
+}
+
+.container4 i:hover {
+    font-size: 40px;
+    color: rgb(56, 43, 179);
+    transform: translate(0,10%);
+}
+
+.title1{
+    height: 30px;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding-top: 15px; 
+    padding-bottom: 15px;
+}
+
+.social-icon {
+    text-decoration: none;
+}
+
+@media(max-width : 400px){
+    .title1{
+        font-size: 1.5rem;
+        padding-bottom: 2px;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+}
+
+
